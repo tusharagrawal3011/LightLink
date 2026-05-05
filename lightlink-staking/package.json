@@ -1,0 +1,29 @@
+{
+  "name": "lightlink-staking",
+  "version": "1.0.0",
+  "description": "ETH staking vault with time-based APY rewards for LightLink L2",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage",
+    "deploy:pegasus": "hardhat run scripts/deploy.js --network lightlink_pegasus",
+    "deploy:phoenix": "hardhat run scripts/deploy.js --network lightlink_phoenix",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "interact:pegasus": "hardhat run scripts/interact.js --network lightlink_pegasus",
+    "interact:phoenix": "hardhat run scripts/interact.js --network lightlink_phoenix",
+    "interact:sepolia": "hardhat run scripts/interact.js --network sepolia"
+  },
+  "keywords": ["staking", "ethereum", "lightlink", "defi"],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.6.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^17.4.2",
+    "hardhat": "^2.28.6"
+  }
+}
